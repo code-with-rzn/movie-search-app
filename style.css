@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f1f8;
+    margin: 0;
+    padding: 30px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 25px;
+}
+
+#movie-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+#movie-input {
+    width: 300px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#movie-form button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    background: #6c4ab6;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#movie-form button:hover {
+    background: #563995;
+}
+
+#movie-results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.movie-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.movie-card h2 {
+    font-size: 20px;
+    margin: 12px 0 8px;
+}
+
+.movie-card p {
+    margin: 6px 0;
+    color: #555;
+}
+
+.error {
+    color: #c9302c;
+    font-weight: bold;
+}
+
+.loading {
+    font-weight: bold;
+    margin-top: 20px;
+}
+.details-card {
+    margin-top: 30px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    text-align: left;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.details-card img {
+    width: 220px;
+    border-radius: 8px;
+}
+
+.details-content {
+    flex: 1;
+}
+
+.details-content h2 {
+    margin-top: 0;
+}
+
+.details-content p {
+    margin: 10px 0;
+}
+#movie-details {
+    display: block;
+    margin-top: 30px;
+    min-height: 100px;
+}
+
+.details-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    text-align: left;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.details-card img {
+    width: 220px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.details-content {
+    flex: 1;
+}
+
+.details-content h2 {
+    margin-top: 0;
+}
+
+.details-content p {
+    margin: 10px 0;
+}
+@media (max-width: 600px) {
+
+    #movie-form {
+        flex-direction: column;
+    }
+
+    #movie-input {
+        width: auto;
+    }
+
+    .details-card {
+        flex-direction: column;
+    }
+
+    .details-card img {
+        width: 100%;
+        max-width: 250px;
+        margin: auto;
+    }
+}
